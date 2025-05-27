@@ -14,6 +14,7 @@ gem "sinatra-activerecord"
 
 gem "http"
 gem "dotenv"
+gem 'careerjet-api-client', '~> 3.1', '>= 3.1.2'
 
 group :development do
   gem "better_errors"
