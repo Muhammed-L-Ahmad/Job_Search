@@ -1,21 +1,23 @@
 require "sinatra"
 require "sinatra/reloader"
 
-careerjet_api_key = ENV.fetch("SEARCH_API_KEY")
-
-# ask the user the title of the job they want to search for
-pp "What is the title of the job you'd like to search for?"
-
-  job_title = gets.chomp
-
 get("/") do
-  erb(:root)
-end
-
-get("/search")
   erb(:search)
 end
 
-get("/search/results")
-  erb(:search_results)
+get("/search") do
+  api = Careerjet::API.new('en_US')
+  
+
+  result = api.search({
+    keywords: params[:keywords],
+    location: params[:location],
+    page: 1
+  })
+
+  @jobs = result['jobs']
+  erb(:results)
 end
+
+set :bind, '0.0.0.0'
+set :port, 9292

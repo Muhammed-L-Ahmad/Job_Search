@@ -14,13 +14,14 @@ gem "sinatra-activerecord"
 
 gem "http"
 gem "dotenv"
-gem 'careerjet-api-client', '~> 3.1', '>= 3.1.2'
+
 
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
   gem "table_print"
   gem "appdev_support"
+  gem 'careerjet-api-client', '~> 3.1', '>= 3.1.2'
 end
 
 group :development, :test do
