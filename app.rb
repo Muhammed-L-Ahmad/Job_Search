@@ -1,5 +1,6 @@
 require "sinatra"
 require "sinatra/reloader"
+require 'careerjet-api-client'
 
 get("/") do
   erb(:search)
