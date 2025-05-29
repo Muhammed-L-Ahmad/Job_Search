@@ -29,7 +29,7 @@
 /config/master.key
 
 # Ignore dotenv files
-/.env*
+.env*
 
 .rbenv-gemsets
 examples.txt

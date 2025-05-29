@@ -1,13 +1,13 @@
 <h1>Search Results</h1>
 
-<% if @jobs.any? %>
+<% if @What_hash.any? %>
   <ul>
-    <% @jobs.each do |job| %>
+    <% @What_hash.each do |What| %>
       <li>
-        <strong><%= job['title'] %></strong><br>
-        <em><%= job['company'] %></em><br>
-        <%= job['locations'] %><br>
-        <a href="<%= job['url'] %>" target="_blank">View Job</a>
+        <strong><%= @What_hash['title'] %></strong><br>
+        <em><%= @who_hash['company'] %></em><br>
+        <%= @where_hash['locations'] %><br>
+        <a href="<%= @What_hash['url'] %>" target="_blank">View Job</a>
       </li>
     <% end %>
   </ul>
@@ -16,4 +16,3 @@
 <% end %>
 
 <a href="/">← New Search</a>
-
