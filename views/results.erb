@@ -1,18 +1,15 @@
-<h1>Search Results</h1>
+<%# @jobs.each do |job| %>
+<!--  <div class="job">
+    <h3><a href="<%#= job['redirect_url'] %>" target="_blank"><%= job['title'] %></a></h3>
+    <p><%#= job['company']['display_name'] %> - <%= job['location']['display_name'] %></p>
+    <p><%#= job['description'] %></p>
 
-<% if @What_hash.any? %>
-  <ul>
-    <% @What_hash.each do |What| %>
-      <li>
-        <strong><%= @What_hash['title'] %></strong><br>
-        <em><%= @who_hash['company'] %></em><br>
-        <%= @where_hash['locations'] %><br>
-        <a href="<%= @What_hash['url'] %>" target="_blank">View Job</a>
-      </li>
-    <% end %>
-  </ul>
-<% else %>
-  <p>No jobs found.</p>
-<% end %>
-
-<a href="/">← New Search</a>
+    <!-- Adzuna attribution -->-->
+<!--    <div class="adzuna-credit">
+      <a href="http://www.adzuna.com" target="_blank">Jobs</a>
+      <a href="http://www.adzuna.com" target="_blank">
+        <img src="https://www.adzuna.com/static/images/adzuna_logo.png" alt="Adzuna" height="20">
+      </a>
+    </div>
+  </div>
+<%# end %>-->

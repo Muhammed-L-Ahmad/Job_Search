@@ -1,0 +1,20 @@
+<h1>Job Search</h1>
+<form method="POST" action="/search">
+  <input type="text" name="query" placeholder="Job title">
+  <input type="text" name="location" placeholder="Location">
+  <button type="submit">Search</button>
+</form>
+
+<% if @jobs.any? %>
+  <h2>Results:</h2>
+  <ul>
+    <% @jobs.each do |job| %>
+      <li>
+        <a href="<%= job["redirect_url"] %>" target="_blank">
+          <strong><%= job["title"] %></strong>
+        </a> – <%= job["location"]["display_name"] %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+

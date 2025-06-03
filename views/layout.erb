@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sinatra Template</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-  </head>
+<head>
+  <title>Job Search</title>
+  <style>
+    .adzuna-credit {
+      margin-top: 2em;
+      font-size: 12px;
+    }
+    .adzuna-credit img {
+      vertical-align: middle;
+      height: 23px;
+    }
+    .adzuna-credit a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <%= yield %>
 
-  <body>
-    <%= yield %>
-  </body>
+<footer style="margin-top: 30px; text-align: center;">
+  <a href="http://www.adzuna.com" target="_blank" style="text-decoration: none; font-size: 16px;">
+    Jobs
+  </a>
+  by
+  <a href="http://www.adzuna.com" target="_blank">
+    <img src="https://www.adzuna.com/static/images/logos/adzuna_logo_grey_116x23.png"
+         alt="Adzuna"
+         width="116"
+         height="23"
+         style="vertical-align: middle;" />
+  </a>
+</footer>
+
+</body>
 </html>
