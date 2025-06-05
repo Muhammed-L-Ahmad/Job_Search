@@ -1,18 +1,1 @@
-# sinatra-template
-
-Use this repository to create new Sinatra apps. 
-
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
-
-```ruby
-require "sinatra/activerecord"
-```
-
-And in the `config/environment.rb` file add this code block:
-
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+This is an Adzuna US job search app where you enter a job title and location in the US and it gives you any job openings for that job title in the location you entered.  It has been deployed to Render at: https://job-search-no4i.onrender.com 
