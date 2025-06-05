@@ -10,6 +10,7 @@ get("/") do
 end
 
 post '/search' do
+  puts "params: #{params}"
   query = params[:query]
   location = params[:location]
   country = 'us'
@@ -23,6 +24,10 @@ post '/search' do
     }
   })
 
+  puts "response: #{response}"
+
   @jobs = response.parsed_response["results"] || []
+
+  puts "jobs: #{@jobs}"
   erb :index
 end
