@@ -22,7 +22,6 @@ group :development do
   gem "binding_of_caller"
   gem "table_print"
   gem "appdev_support"
-  gem 'adzuna-api-client', '~> 3.1', '>= 3.1.2'
 end
 
 group :development, :test do
