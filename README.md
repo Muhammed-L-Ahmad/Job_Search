@@ -7,7 +7,7 @@ A Ruby job search web app that uses the Adzuna API to search and display job lis
 ## Features
 
 - Search for jobs by keyword
-- Display job listings from the Careerjet API
+- Display job listings from the Adzuna API
 - View job title, company, location, and listing links
 - Simple Ruby/Sinatra web interface
 
