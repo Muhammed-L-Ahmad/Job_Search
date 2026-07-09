@@ -32,7 +32,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
-    careerjet-api-client (3.1.2)
+    adzuna-api-client (3.1.2)
       hashie
       multi_json
       rest-client
